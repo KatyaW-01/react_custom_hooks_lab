@@ -1,6 +1,7 @@
 import { useLocalStorage } from "../hooks/useLocalStorage";
 function Form() {
-
+  const [name, setName] = useLocalStorage("name", "")
+  const [serviceNumber, setServiceNumber] = useLocalStorage("serviceNumber", "")
     return (
       <>
         <form style={{ display: "flex", flexDirection: "column" }}>
